@@ -69,16 +69,3 @@ const showWinner =(winner)=>
  };
 newGameBtn.addEventListener("click",resetGame);
 resetBtn.addEventListener("click",resetGame);
-//to pop the winner after the game gets over
-const popElement=()=>{
-    for(let pat of patterns)
-        {
-            let posVal1 = boxes[pattern[0]].innerText;
-            let posVal2=boxes[pattern[1]].innerText;
-            let posVal3 =boxes[pattern[2]].innerText;
-            if(posVal1==""&& posVal2==""&& posVal3=="")
-                {
-                    console.log("congratulations",pat);
-                }
-        }
-}
